@@ -11,14 +11,19 @@
 	font-weight: bold;
 }
 body{
-	background-image: url(bg-img/5.jpg);
+	background-image: url('bg-img/5.jpg');
 	background-attachment: fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size:cover;
 }
-section{ margin-top: 60px; }
+
+.home{
+	margin:90px 30px 120px 30px;
+	font-size: 36px;
+	color: red;
+}
 /*--table--*/
 .table{
 	background-color: #171a5f;;
@@ -28,6 +33,22 @@ section{ margin-top: 60px; }
 	border-radius: 10px;
 	opacity: .9;
 	margin-bottom: 150px;
+}
+.table {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 3s
+}
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 } 
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom { 
+  from{ bottom:-100px; opacity:0 } 
+  to{ bottom:0; opacity:1 }
 }
 .table-hover{
 	cursor: pointer;
@@ -47,6 +68,61 @@ table tbody{
 	font-size: 16px;
 }
 /*--table--*/
+
+/*--JobExp--*/
+.jobExp{
+	margin: 90px 30px 120px 30px;
+}
+.pull-left{
+	margin-right: 50px;
+}
+.pull-right{
+	margin: 20px 50px 20px 20px;
+}
+.experience{ 
+	background: #080807bd;
+    font-family: Comic Sans MS;
+    color: #0bb5a7e3;
+    text-align: justify;
+    font-size: 15px;
+    border-radius: 10px;
+    border-left: 3px solid #940b0b;
+    border-bottom: 5px solid #0e0e0e;;
+    border-right: 5px solid #0e0e0e;;
+    
+}
+/* Add animation to "page content" */
+.experience {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 3s
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 } 
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom { 
+  from{ bottom:-100px; opacity:0 } 
+  to{ bottom:0; opacity:1 }
+}
+/*--End JobExp--*/
+
+/*--Portfolio--*/
+.portFolio{
+	background-color: red;
+	margin: 90px 30px 120px 30px;
+}
+/*--End Portfolio--*/
+
+/*--About page--*/
+.about-me{
+	background: red;
+	margin: 90px 30px 120px 30px;
+}
 footer{
 	background: black;
 	width: 100%;
